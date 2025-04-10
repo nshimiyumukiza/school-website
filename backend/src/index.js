@@ -12,6 +12,9 @@ const db = process.env.DATABASE;
  app.listen(port,()=>{
     console.log(`port running on ${port}`)
  })
+ app.get((req,res), () =>{
+    res.send("hello")
+ })
 
  
  mongoose.connect(db)
