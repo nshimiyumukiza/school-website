@@ -44,7 +44,7 @@ const Navbar = () => {
                 {menu && (
                     <div
                         ref={menuRef}
-                        className="absolute top-14 right-0 bg-gray-100 rounded-lg p-4 w-48 md:hidden">
+                        className="absolute top-14 right-0 bg-green-500 rounded-lg p-4 w-48 md:hidden shadow-2xl">
                         <div className="flex justify-between items-center mb-4">
                             <span className="font-semibold text-lg">menu</span>
                             <AiOutlineClose onClick={() => setMenu(false)} className="text-red-500 text-2xl" />
