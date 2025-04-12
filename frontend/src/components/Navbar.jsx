@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { IoMenuOutline } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
+import logo from "./image/logo.png";
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
         <div className='bg-gray-200'>
             <div className='flex justify-between px-8 mx-auto w-11/12 py-2'>
                 <div>
-                    <h1 className='text-2xl font-bold text-black'>School website</h1>
+                   <img className="h-14" src={logo} alt="logo" />
                 </div>
                 <div className=' hidden md:flex space-x-5'>
                     <button className='border-2 border-blue-400 rounded-lg px-3 py-2 text-blue-500 hover:text-white hover:bg-blue-400'>Login</button>

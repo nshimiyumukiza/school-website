@@ -4,6 +4,7 @@ import { Carousel } from 'antd';
 import { useState } from 'react';
 import comuter1 from "./image/computer class.png";
 import computer2 from "./image/computer2.png";
+import Testmonial from './Testmonial';
 
 const Hero = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -80,6 +81,12 @@ const Hero = () => {
           </Carousel>
         </div>
       </div>
+      <div className="bg-blue-700/5 flex flex-col space-y-3 justify-between items-center p-12">
+                <p className="text-2xl font-bold text-blue-700 uppercase">our community</p>
+                <p className="text-4xl"> 150</p>
+                <p className="text-lg font-semibold">graudutes</p>
+            </div>
+            <Testmonial />
     </div>
   );
 };
